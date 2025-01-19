@@ -1,9 +1,7 @@
-const express = require('express');
+const app = require("./app");
+const PORT = process.env.PORT || 8000;
 
-const PORT = process.env.PORT || 3000;
-
-const app = express();
-
-app.set("view engine", "ejs");
-
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+// listen server
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
