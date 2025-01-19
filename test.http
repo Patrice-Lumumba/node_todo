@@ -1,0 +1,15 @@
+POST http://localhost:3000/student/single
+Content-Type: application/json
+
+{
+  "name": "Patricia",
+  "email": "testeur@test.com",
+  "age": 21,
+  "department": "ITC"
+}
+
+###
+### GET request to example server
+GET http://localhost:3000/admin/home
+
+###
